@@ -1,0 +1,35 @@
+body{
+  background-image: url(https://i.ytimg.com/vi/T9DZeydirLM/maxresdefault.jpg);
+}
+
+div {
+
+    position: relative;
+    -webkit-animation: mymove 6s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 8s infinite;
+}
+
+/* Standard syntax */
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;
+color: pink;}
+#div3 {animation-timing-function: ease-in; color: orange;
+}
+#div4 {animation-timing-function: ease-out; color: yellow;}
+
+.bird{
+  width: 500px;
+  height: 500px;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
